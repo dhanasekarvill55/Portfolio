@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles2.css">
+    <meta name="description" content="Dhanasekar Venkatesan's portfolio - Cloud Engineer, Cybersecurity Expert, and DevOps Specialist. Explore my skills, experience, and contact me for collaborations.">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dhanasekar Venkatesan Portfolio</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <!-- Logo and tagline -->
+                <a href="#" class="nav__logo">Dhanasekar Venkatesan</a>
+                <p class="nav__tagline">Cloud Engineer | Cybersecurity Expert | DevOps Specialist</p>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <!-- Navigation menu links -->
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#timeline" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <!-- Navigation toggle icon for mobile view -->
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME SECTION =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <!-- Home title and description -->
+                <h4 class="home__title">Hi,<br>I'm <span class="home__title-color">Dhanasekar</span><br>
+                    <span id="dynamic-title">Cloud Engineer</span></h4>
+                <p class="home__description">Passionate about transforming ideas into secure cloud solutions.</p>
+                <a href="#contact" class="button">Contact</a>
+                <a href="assets/pdf/Resume.pdf" class="button">Hire</a>
+            </div>
+        <!-- Cloud Engineer", "Cybersecurity Expert", "DevOps Specialist js script add -->
+            <script>
+                const titles = ["Cloud Engineer", "Cybersecurity Expert", "DevOps Specialist"];
+                let index = 0;
+        
+                function changeTitle() {
+                    const dynamicTitle = document.getElementById("dynamic-title");
+                    index = (index + 1) % titles.length; // Cycle through the titles
+                    dynamicTitle.textContent = titles[index];
+                }
+        
+                // Change title every 3 seconds
+                setInterval(changeTitle, 3000);
+            </script>
+
+
+            <div class="home__social">
+                <!-- Social media links -->
+                <a href="https://www.linkedin.com/in/dhanasekar-venkatesan-8b8571229" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/dhanasekarvill55" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <!-- Decorative SVG image -->
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT SECTION =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <!-- About image -->
+                    <img src="assets/img/about.jpg" alt="About Dhanasekar">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Dhanasekar Venkatesan</h2>
+                    <!-- About description -->
+                    <p style="text-align: justify;">
+                        <p>I have over 8 years of experience in AWS, cybersecurity, and DevOps. My work focuses on creating secure and efficient processes that help businesses improve their systems and deliver new features faster.</p>
+
+                        <h2>What I Do Best:</h2>
+                        <ul>
+                            <li><strong>AWS and Cybersecurity:</strong> I design strong security systems that keep company data safe and ensure compliance with industry regulations.</li>
+                            <li><strong>DevOps and DevSecOps:</strong> I streamline workflows, making software deployments quicker and more reliable, which helps bring new products to market faster.</li>
+                            <li><strong>Collaboration:</strong> I enjoy working with different teams to turn complex technical needs into clear, actionable plans that support business goals.</li>
+                            <li><strong>Continuous Improvement:</strong> I’m committed to fostering a culture of improvement within teams, leading to better results for the organization.</li>
+                        </ul>
+                
+                        <h2>Why It Matters:</h2>
+                        <p>I’m passionate about technology and love solving problems. I aim to create solutions that not only meet technical requirements but also help the business succeed.</p>
+                    
+                      <br>
+                      <a href="assets/pdf/Resume.pdf" class="button">Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS SECTION =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
+                    <!-- Skills description -->
+                    <p class="skills__text">Skilled in AWS, DevOps, and DevSecOps with a focus on secure release management. Proficient in optimizing processes and enhancing system security.</p>
+                    <!-- Skill sets with progress bars -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-aws'></i>
+                            <span class="skills__name">AWS & Azure</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">DevOps</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div><span class="skills__percentage">85%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Cyber Security</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                        <div><span class="skills__percentage">65%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">Windows Server Administrator</span>
+                        </div>
+                        <div class="skills__bar skills__ux"></div>
+                        <div><span class="skills__percentage">85%</span></div>
+                    </div>
+                </div>
+                <div>
+                    <!-- Skills image -->
+                    <img src="assets/img/work3.jpg" alt="Work Example" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK SECTION =====-->
+        <section class="section" id="timeline">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <!-- Education Section -->
+                <div class="timeline__container education__container">
+                    <div class="timeline__content">
+                        <h4>2007</h4>
+                        <h3>Secondary School Leaving Certificate(10th)</h3>
+                        <p>I studied at St. Charles Higher Secondary School, KG Kandigai, and I scored 77%</p>
+                    </div>
+    
+                    <div class="timeline__content">
+                        <h4>2007 - 2009</h4>
+                        <h3>Higher Secondary School Certificate(+2 First Group)</h3>
+                        <p>I am studying in HSC first group, Computer Science, at St. Charles HR Sec School, KG Kandigai, and I scored 55.7% marks.</p>
+                    </div>
+    
+                    <div class="timeline__content">
+                        <h4>2009 - 2011</h4>
+                        <h3>Diploma in Electronics and Communication Engineering</h3>
+                        <p>I completed a diploma in Electronics and Communication Engineering at Jaya Polytechnic College in Thiruniravur, where I achieved 84.8% marks.</p>
+                    </div>
+    
+                    <div class="timeline__content">
+                        <h4>2011 - 2016</h4>
+                        <h3>Bachelor of Engineering in Electronics and Communication Engineering.</h3>
+                        <p>I studied BE in Electronics and Communication Engineering at Sri Venkateswara College of Engineering and Technology in Thirupachur, Tiruvallur, Tamil Nadu, where I achieved a 6.67% in the Second Class.</p>
+                    </div>
+                </div>
+        
+                <!-- Experience Section -->
+                <div class="timeline__container experience__container">
+                    <div class="timeline__content">
+                        <h4>April 2016 - July 2018</h4>
+                        <h3>Technical Support Engineer</h3>
+                        <p>I worked as Technical Support Engineer under Income Tax Department on payroll of Origin ITFS Pvt Ltd.On my Tenure I handled Laptop and desktop Hardware, Asset Management, Vendor Management, Application Remote support and Network provided support to users approx. 1500+</p>
+                    </div>
+    
+                    <div class="timeline__content">
+                        <h4>Mar 2019 - Jan 2022</h4>
+                        <h3>Desktop Support Engineer</h3>
+                        <p>I worked as Desktop support Engineer under Reliance Jio Infocomm Ltd on payroll of Aforeseve Ltd.On my Tenure I handled Asset Management, Vendor Management, SCCM, Network & Citrix provided support to users approx. 3000+</p>
+                    </div>
+    
+                    <div class="timeline__content">
+                        <h4>June 2022 - July 2023</h4>
+                        <h3>System Administrator</h3>
+                        <p>I worked as System administrator in Sankara software services pvt ltd. Here we are working on .Net projects. As per the client requirements we are create the JIRA, Build servers, Deployment via Jenkins and monitoring Zabbix, datadog</p>
+                    </div>
+                    <div class="timeline__content">
+                        <h4>July 2023 - Present</h4>
+                        <h3>Senior System Administrator</h3>
+                        <p>I am working as a Senior System Administrator at Shankar Software Service Pvt Ltd. Here, we handle ReactJS projects and manage AWS, Git, JIRA, release management, DevOps, cybersecurity, and Windows servers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!--===== CONTACT SECTION =====-->
+<!--===== CONTACT SECTION =====-->
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact__info bd-grid">
+        <div class="contact__item">
+            <strong>Email:</strong>
+            <a href="mailto:dhanasekarvill5@gmail.com" class="contact__link">dhanasekarvill5@gmail.com</a>
+        </div>
+        <div class="contact__item">
+            <strong>Phone:</strong>
+            <a href="tel:+917448301712" class="contact__link">+91 74483 01712</a>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Dhanasekar Venkatesan</p>
+        <div class="footer__social">
+            <!-- Footer social media links -->
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; 2024 Dhanasekar. All rights reserved.</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
